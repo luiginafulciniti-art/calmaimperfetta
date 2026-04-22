@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I tuoi progressi - Calmaimperfetta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>💛 Calmaimperfetta</h1>
+        <p class="tagline">Aiuto nei momenti difficili</p>
+    </header>
+
+    <main class="content-container">
+        <a href="index.html" class="back-btn">⬅ Torna alla Home</a>
+
+        <div class="content-card">
+            <h2>📊 I tuoi progressi</h2>
+            <p style="text-align: center; font-size: 2rem; margin: 2rem 0;">
+                <strong id="progressCounter">0</strong>
+            </p>
+            <p style="text-align: center; color: 
+;">
+                momenti gestiti
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h3>💛 Ogni momento conta</h3>
+            <p>Ogni volta che usi l'app e completi un flusso, il contatore aumenta.</p>
+            <p>Non è una gara. È solo un modo per ricordarti che <strong>stai facendo del tuo meglio</strong>.</p>
+            <p style="margin-top: 1.5rem; text-align: center;">
+                <strong>Sei una brava mamma.</strong>
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h3>📥 Esporta i tuoi dati</h3>
+            <p>Puoi scaricare i tuoi progressi in formato testo.</p>
+            <p style="font-size: 0.9rem; color: 
+; margin-top: 0.5rem;">
+                I dati sono salvati solo sul tuo telefono. Nessuno li vede tranne te.
+            </p>
+            <button class="btn" onclick="exportData()">📥 Scarica dati</button>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="counter" id="counter">+0 momenti gestiti</div>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="progressi.html">Progressi</a>
+            <a href="impostazioni.html">Impostazioni</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Aggiorna contatore nella pagina progressi
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressCounter = document.getElementById('progressCounter');
+            if (progressCounter) {
+                const managedMoments = parseInt(localStorage.getItem('managedMoments')) || 0;
+                progressCounter.textContent = managedMoments;
+            }
+        });
+
+        // Funzione per esportare i dati
+        function exportData() {
+            const managedMoments = parseInt(localStorage.getItem('managedMoments')) || 0;
+            const exportDate = new Date().toLocaleDateString('it-IT');
+            
+            const dataText = `Calmaimperfetta - I tuoi progressi
+Data esportazione: ${exportDate}
+
+Momenti gestiti: ${managedMoments}
+
+---
+Ogni momento conta. Stai facendo del tuo meglio.
+Sei una brava mamma.
+💛
+`;
+            
+            // Crea file di testo
+            const blob = new Blob([dataText], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `calmaimperfetta-progressi-${exportDate}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine - Calmaimperfetta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>💛 Calmaimperfetta</h1>
+        <p class="tagline">Aiuto nei momenti difficili</p>
+    </header>
+
+    <main class="content-container">
+        <a href="index.html" class="back-btn">⬅ Torna alla Home</a>
+
+        <div class="content-card">
+            <h2>🌅 Routine del mattino</h2>
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="morning1">
+                    <label for="morning1">☀️ Sveglia</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="morning2">
+                    <label for="morning2">🚿 Bagno</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="morning3">
+                    <label for="morning3">👕 Vestiti</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="morning4">
+                    <label for="morning4">🥐 Colazione</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="morning5">
+                    <label for="morning5">🎒 Zaino pronto</label>
+                </li>
+            </ul>
+            <a href="index.html" class="btn btn-done">✅ Fatto</a>
+        </div>
+
+        <div class="content-card">
+            <h2>🌙 Routine della sera</h2>
+            <p style="text-align: center; margin-bottom: 1rem;">Chiudiamo piano la giornata</p>
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="evening1">
+                    <label for="evening1">🍽️ Cena</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="evening2">
+                    <label for="evening2">🛁 Bagno</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="evening3">
+                    <label for="evening3">🧸 Pigiama</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="evening4">
+                    <label for="evening4">📖 Una storia</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="evening5">
+                    <label for="evening5">🌙 Luce bassa</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="evening6">
+                    <label for="evening6">💤 Nanna</label>
+                </li>
+            </ul>
+            <a href="index.html" class="btn btn-done">✅ Fatto</a>
+        </div>
+
+        <div class="content-card">
+            <h2>📚 Routine compiti</h2>
+            <p style="text-align: center; margin-bottom: 1rem;">Facciamo così</p>
+            <ol class="step-list">
+                <li>
+                    <strong>10 minuti → Prova</strong><br>
+                    Inizia. Solo 10 minuti.
+                </li>
+                <li>
+                    <strong>5 minuti → Muoviti</strong><br>
+                    Pausa. Sgranchisciti.
+                </li>
+                <li>
+                    <strong>10 minuti → Riprendi</strong><br>
+                    Ancora un po'. Poi basta.
+                </li>
+            </ol>
+            <a href="index.html" class="btn btn-done">✅ Fatto</a>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="counter" id="counter">+0 momenti gestiti</div>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="progressi.html">Progressi</a>
+            <a href="impostazioni.html">Impostazioni</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

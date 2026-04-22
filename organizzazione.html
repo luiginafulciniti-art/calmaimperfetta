@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizzazione - Calmaimperfetta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>💛 Calmaimperfetta</h1>
+        <p class="tagline">Aiuto nei momenti difficili</p>
+    </header>
+
+    <main class="content-container">
+        <a href="index.html" class="back-btn">⬅ Torna alla Home</a>
+
+        <div class="content-card">
+            <h2>📋 Organizzazione</h2>
+            <p style="text-align: center; margin-bottom: 1.5rem;">
+                Strumenti semplici per gestire la giornata
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h3>📅 Piano della giornata</h3>
+            <p style="text-align: center; color: 
+; margin-bottom: 1rem;">
+                Massimo 3 cose. Non di più.
+            </p>
+            <ol class="step-list">
+                <li>
+                    <strong>Cosa DEVO fare oggi?</strong><br>
+                    Una cosa sola. La più importante.
+                </li>
+                <li>
+                    <strong>Cosa VORREI fare?</strong><br>
+                    Se ho energia. Altrimenti va bene lo stesso.
+                </li>
+                <li>
+                    <strong>Cosa può aspettare?</strong><br>
+                    Tutto il resto. Domani esiste.
+                </li>
+            </ol>
+        </div>
+
+        <div class="content-card">
+            <h3>⏰ Gestione del tempo</h3>
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="time1">
+                    <label for="time1">🌅 Mattino: routine base</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="time2">
+                    <label for="time2">☀️ Giorno: 1 cosa importante</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="time3">
+                    <label for="time3">🌆 Pomeriggio: compiti/gioco</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="time4">
+                    <label for="time4">🌙 Sera: routine nanna</label>
+                </li>
+            </ul>
+            <p style="margin-top: 1rem; text-align: center; color: 
+;">
+                Tutto il resto può aspettare.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h3>🎒 Prepara lo zaino</h3>
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="bag1">
+                    <label for="bag1">📚 Libri e quaderni</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="bag2">
+                    <label for="bag2">✏️ Astuccio</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="bag3">
+                    <label for="bag3">🍎 Merenda</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="bag4">
+                    <label for="bag4">💧 Borraccia</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="bag5">
+                    <label for="bag5">📝 Diario/avvisi</label>
+                </li>
+            </ul>
+            <p style="margin-top: 1rem; text-align: center;">
+                <strong>💡 Prepara la sera prima</strong>
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h3>🏠 Casa in ordine (minimo)</h3>
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="house1">
+                    <label for="house1">🍽️ Cucina: piatti lavati</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="house2">
+                    <label for="house2">👕 Vestiti: un carico in lavatrice</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="house3">
+                    <label for="house3">🧹 Pavimento: una passata veloce</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="house4">
+                    <label for="house4">🛏️ Letti: fatti (anche male)</label>
+                </li>
+            </ul>
+            <p style="margin-top: 1rem; text-align: center; color: 
+;">
+                Fatto è meglio che perfetto.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h3>🛒 Lista della spesa</h3>
+            <p style="text-align: center; color: 
+; margin-bottom: 1rem;">
+                Solo l'essenziale
+            </p>
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="shop1">
+                    <label for="shop1">🍞 Pane</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="shop2">
+                    <label for="shop2">🥛 Latte</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="shop3">
+                    <label for="shop3">🍝 Pasta</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="shop4">
+                    <label for="shop4">🍎 Frutta</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="shop5">
+                    <label for="shop5">🥕 Verdura</label>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="counter" id="counter">+0 momenti gestiti</div>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="progressi.html">Progressi</a>
+            <a href="impostazioni.html">Impostazioni</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

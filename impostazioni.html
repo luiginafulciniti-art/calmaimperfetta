@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impostazioni - Calmaimperfetta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>💛 Calmaimperfetta</h1>
+        <p class="tagline">Aiuto nei momenti difficili</p>
+    </header>
+
+    <main class="content-container">
+        <a href="index.html" class="back-btn">⬅ Torna alla Home</a>
+
+        <div class="content-card">
+            <h2>⚙️ Impostazioni</h2>
+        </div>
+
+        <div class="content-card">
+            <h3>🔒 Privacy</h3>
+            <p>Tutti i tuoi dati sono salvati <strong>solo sul tuo telefono</strong>.</p>
+            <p>Nessuno li vede. Nessuno li raccoglie. Sono solo tuoi.</p>
+        </div>
+
+        <div class="content-card">
+            <h3>🗑️ Cancella dati</h3>
+            <p>Puoi cancellare tutti i tuoi progressi e ricominciare da zero.</p>
+            <p style="font-size: 0.9rem; color: 
+; margin-top: 0.5rem;">
+                ⚠️ Questa azione non può essere annullata.
+            </p>
+            <button class="btn" style="background-color: 
+;" onclick="resetData()">🗑️ Cancella tutto</button>
+        </div>
+
+        <div class="content-card">
+            <h3>ℹ️ Informazioni</h3>
+            <p><strong>Calmaimperfetta</strong></p>
+            <p>Versione 1.0</p>
+            <p style="margin-top: 1rem;">
+                Creato con 💛 per mamme che fanno del loro meglio.
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: 
+;">
+                Questa app non sostituisce il supporto medico o psicologico professionale.
+                Se hai bisogno di aiuto, contatta un professionista.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h3>📞 Contatti utili</h3>
+            <p><strong>Telefono Azzurro:</strong> 19696</p>
+            <p><strong>Telefono Amico:</strong> 02 2327 2327</p>
+            <p><strong>Emergenza:</strong> 112</p>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="counter" id="counter">+0 momenti gestiti</div>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="progressi.html">Progressi</a>
+            <a href="impostazioni.html">Impostazioni</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function resetData() {
+            if (confirm('Sei sicura di voler cancellare tutti i tuoi dati?\n\nQuesta azione non può essere annullata.')) {
+                if (confirm('Ultima conferma: vuoi davvero cancellare tutto?')) {
+                    localStorage.clear();
+                    alert('✅ Tutti i dati sono stati cancellati.\n\nRicominciamo da zero. 💛');
+                    window.location.href = 'index.html';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

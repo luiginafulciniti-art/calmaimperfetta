@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stampabili - Calmaimperfetta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>💛 Calmaimperfetta</h1>
+        <p class="tagline">Aiuto nei momenti difficili</p>
+    </header>
+
+    <main class="content-container">
+        <a href="index.html" class="back-btn">⬅ Torna alla Home</a>
+
+        <div class="content-card">
+            <h2>🖨️ Stampabili</h2>
+            <p style="text-align: center; margin-bottom: 1.5rem;">
+                Strumenti pronti da usare anche nei momenti difficili<br>
+                (anche senza telefono)
+            </p>
+        </div>
+
+        <div class="content-card printable">
+            <h3>🌙 Chiudiamo piano la giornata</h3>
+            <ul class="checklist">
+                <li>
+                    <input type="checkbox" id="print1">
+                    <label for="print1">🛁 Bagno</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="print2">
+                    <label for="print2">🧸 Pigiama</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="print3">
+                    <label for="print3">📖 Una storia</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="print4">
+                    <label for="print4">🌙 Luce bassa</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="print5">
+                    <label for="print5">💤 Nanna</label>
+                </li>
+            </ul>
+            <button class="btn" onclick="window.print()">🖨️ Stampa questa</button>
+        </div>
+
+        <div class="content-card printable">
+            <h3>📚 Facciamo così (compiti)</h3>
+            <ol class="step-list">
+                <li>
+                    <strong>10 min → Prova</strong><br>
+                    Inizia. Solo 10 minuti.
+                </li>
+                <li>
+                    <strong>5 min → Muoviti</strong><br>
+                    Pausa. Sgranchisciti.
+                </li>
+                <li>
+                    <strong>10 min → Riprendi</strong><br>
+                    Ancora un po'. Poi basta.
+                </li>
+            </ol>
+            <button class="btn" onclick="window.print()">🖨️ Stampa questa</button>
+        </div>
+
+        <div class="content-card printable">
+            <h3>💬 Frasi pronte</h3>
+            <p>✅ Ti vedo. Ti ascolto.</p>
+            <p>✅ Capisco che è difficile.</p>
+            <p>✅ Facciamo una cosa alla volta.</p>
+            <p>✅ Respiriamo insieme.</p>
+            <p>✅ Va bene sentirsi così.</p>
+            <p>✅ Sono qui con te.</p>
+            <p>✅ Non sei solo/a.</p>
+            <p>✅ Ti voglio bene anche quando è difficile.</p>
+            <button class="btn" onclick="window.print()">🖨️ Stampa questa</button>
+        </div>
+
+        <div class="content-card printable">
+            <h3>🚨 Momento di crisi</h3>
+            <ol class="step-list">
+                <li>
+                    <strong>Fermati</strong><br>
+                    Metti giù tutto. Siediti.
+                </li>
+                <li>
+                    <strong>Respira</strong><br>
+                    Inspira 4. Espira 4. Ripeti 3 volte.
+                </li>
+                <li>
+                    <strong>Una cosa sola</strong><br>
+                    Cosa serve ORA? Il resto può aspettare.
+                </li>
+                <li>
+                    <strong>Chiedi aiuto</strong><br>
+                    Chiama qualcuno. Non sei sola.
+                </li>
+            </ol>
+            <p style="margin-top: 1.5rem;"><strong>📞 Telefono Azzurro:</strong> 19696</p>
+            <p><strong>📞 Emergenza:</strong> 112</p>
+            <button class="btn" onclick="window.print()">🖨️ Stampa questa</button>
+        </div>
+
+        <div class="content-card printable">
+            <h3>🌙 Energia zero</h3>
+            <p style="text-align: center; margin-bottom: 1rem;">
+                <strong>Va bene così</strong>
+            </p>
+            <p>✔️ Cena semplice</p>
+            <p>✔️ Bagno veloce</p>
+            <p>✔️ Pigiama e basta</p>
+            <p>✔️ Storia breve o niente storia</p>
+            <p>✔️ Luce spenta presto</p>
+            <p style="margin-top: 1.5rem; text-align: center;">
+                <strong>Domani è un altro giorno.</strong>
+            </p>
+            <button class="btn" onclick="window.print()">🖨️ Stampa questa</button>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="counter" id="counter">+0 momenti gestiti</div>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="progressi.html">Progressi</a>
+            <a href="impostazioni.html">Impostazioni</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
